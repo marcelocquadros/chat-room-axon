@@ -1,5 +1,7 @@
 package io.axoniq.labs.chat.query.rooms.messages;
 
+import org.axonframework.eventhandling.Timestamp;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,7 +12,6 @@ public class ChatMessage {
     @Id
     @GeneratedValue
     private Long id;
-
     private long timestamp;
     private String roomId;
     private String message;
